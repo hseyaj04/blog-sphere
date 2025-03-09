@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../index'
+import {Logo} from '../index'
 
 
 function Footer() {
@@ -15,7 +15,7 @@ function Footer() {
                             </div>
                             <div>
                                 <p className="text-sm text-gray-600">
-                                    &copy; Copyright 2023. All Rights Reserved by DevUI.
+                                    &copy; Copyright 2023. All Rights Reserved by Jayesh.
                                 </p>
                             </div>
                         </div>

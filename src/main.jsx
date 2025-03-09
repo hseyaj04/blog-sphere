@@ -16,6 +16,10 @@ import {
 
 
 
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import App from './app.jsx' 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -28,9 +32,10 @@ const router = createBrowserRouter([
       {
         path:'/login',
         element: (
-          <AuthLayout authentication={false}>
-            <Login />
-          </AuthLayout>
+          <Login />
+          // <AuthLayout authentication={false}>
+          //   <Login />
+          // </AuthLayout>
 
         )
       },
@@ -77,8 +82,6 @@ const router = createBrowserRouter([
   }
 ])
 
-import App from './App.jsx'
-import { createBrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

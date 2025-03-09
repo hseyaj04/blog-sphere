@@ -2,7 +2,6 @@ import React from 'react'
 import {Logo, Container, LogoutBtn} from '../index'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
 
 function Header() {
   const authStatus = useSelector((state) => state.auth.status)
@@ -34,7 +33,7 @@ function Header() {
   return (
     <header className='py-3 shadow bg-gray-500 '>
       <Container>
-        <nac className='flex'>
+        <nav className='flex'>
           <div className='mr-4 '>
             <Link to='/'>
             <Logo width='70px' />
@@ -58,7 +57,7 @@ function Header() {
               <LogoutBtn />
             </li>
           )}
-        </nac>
+        </nav>
       </Container>
     </header>
   )
