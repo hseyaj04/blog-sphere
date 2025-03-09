@@ -53,7 +53,7 @@ export class AuthService {
         try {
             return await this.account.deleteSessions()
         } catch (error) {
-            throw error
+            throw new error
         }
     }
 
