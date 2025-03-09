@@ -10,7 +10,7 @@ import { useForm } from 'react-hook-form'
 
 
 
-function SIgnup() {
+function Signup() {
 
     const dispatch = useDispatch()
     const [error, setError] = useState("")
@@ -95,4 +95,4 @@ function SIgnup() {
   )
 }
 
-export default SIgnup
+export default Signup
